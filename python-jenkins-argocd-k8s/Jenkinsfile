@@ -11,7 +11,7 @@ pipeline {
         stage('Checkout'){
            steps {
                git branch: 'main', 
-                   credentialsId: '96ede419-74f7-4d89-88a3-f44d62c141b1', 
+                   credentialsId: 'jenkins-token', 
                    url: 'https://github.com/shivaprasadmullapudi/Jenkins-Zero-To-Hero'
            }
         }
